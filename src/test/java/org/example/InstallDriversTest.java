@@ -1,19 +1,18 @@
 package org.example;
 
 // from https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/java/src/test/java/dev/selenium/getting_started
+// look at https://testng.org/doc/selenium.html
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class InstallDriversTest {
     @Test
-    @Disabled("Do not run in CI")
     public void chromeSession() {
         WebDriverManager.chromedriver().setup();
 
@@ -23,7 +22,6 @@ public class InstallDriversTest {
     }
 
     @Test
-    @Disabled("Do not run in CI")
     public void edgeSession() {
         WebDriverManager.edgedriver().setup();
 
@@ -33,7 +31,6 @@ public class InstallDriversTest {
     }
 
     @Test
-    @Disabled("Do not run in CI")
     public void firefoxSession() {
         WebDriverManager.firefoxdriver().setup();
 
@@ -42,13 +39,4 @@ public class InstallDriversTest {
         driver.quit();
     }
 
-    @Test
-    @Disabled("Do not run in CI")
-    public void ieSession() {
-        WebDriverManager.iedriver().setup();
-
-        WebDriver driver = new InternetExplorerDriver();
-
-        driver.quit();
-    }
 }
