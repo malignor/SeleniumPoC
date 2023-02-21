@@ -1,0 +1,7 @@
+page,Hname,Xml,Css,Id,Tagname,Att[0],AttV[0],Att[1],AttV[1],Att[2],AttV[2]
+https://demoqa.com/,elementCssC1,,.card:nth-child(1) path,,,,,,,,
+https://demoqa.com/,elementCSSItem0,,.show #item-0 > .text,,,,,,,,
+https://demoqa.com/,elementTxtUserName,"//*[@id=""userName""]",,userName,,,,,,,
+https://demoqa.com/,elementTxtEmail,"//*[@id=""userEmail""]",,userEmail,,,,,,,
+https://demoqa.com/,elementTxtCurrAddr,"//*[@id=""currentAddress""]",,currentAddress,,,,,,,
+https://demoqa.com/,elementButtonSubmit,"//*[@id=""submit""]",,submit,,,,,,,
